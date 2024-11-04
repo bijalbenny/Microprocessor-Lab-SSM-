@@ -3,10 +3,9 @@
 #include <stdlib.h>
 
 void main() {
-    FILE *fp;
+    FILE *fp = fopen("record.txt", "r");
     int i, j, length;
     char line[50], arr[10];
-    fp = fopen("record.txt", "r");
     fscanf(fp, "%s", line);
 
     printf("The Program name is : ");
