@@ -64,6 +64,7 @@ void main() {
         fprintf(objectcode, "T^%06d^%02X^%s\n", textStartAddr, length / 2, textRecord);
     }
     fprintf(objectcode, "E^%06d\n", start);
+    fprintf(output, "%d %-7s%-7s%-7s", locctr, label, opcode, operand);
     fclose(intermediate); fclose(symtab); fclose(optab); fclose(output); fclose(prgmlength);
     printf("FINISHED EXECUTION!!!\n");
 }
